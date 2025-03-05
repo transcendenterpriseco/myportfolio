@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+    <link rel="stylesheet" href="assets/css/tablet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/cursive" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <a href="#main-div" style="text-decoration: none; color: black">
+            <div class="site-identity">
+                <img src="assets/images/relative.png" alt="Site Logo">
+                <h4>Mang Juan</h4>
+            </div>
+        </a>
+        <div class="menu-container">
+            <ul class="nav-menu">
+                <li><a href="#main-div">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li class="sibling-4"><a href="#">Works</a></li>
+                <li class="menu-btn"><a href="#">Hire Me</a></li>
+            </ul>
+        </div>
+
+        <div class="burger-menu-btn">
+            <img src="assets/images/burger.png" alt="" onclick="toggleMenu()">
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="menu-container-mobile">
+        <img class="close-btn" src="assets/images/close.png" alt=""  onclick="toggleMenu()">
+        <ul class="nav-menu-mobile">
+            <li><a href="#main-div">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li class="sibling-4"><a href="#">Works</a></li>
+            <li class="menu-btn"><a href="#">Hire Me</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero / Banner -->
+    <div id="main-div" class="hero">
+        <div class="hero-img" style="position: relative;">
+            <img src="assets/images/hero1.png" alt="Hero image">
+            <img class="small-img" src="assets/images/relative.png" alt="Site Logo">
+        </div>
+        <div class="hero-heading">
+            <h1 class="name">Explore My <br>
+                Portfolio</h1>
+            <p class="sub-heading">Discover My Expertise as a Full Stack Developer</p>
+            <div class="hero-button">
+                <button class="hire-me-btn" style="margin-right: 15px;">Hire Me</button>
+                <button>Contact Me</button>
+            </div>
+            <p class="small-text">Crafting Innovative Digital Solutions for Your Business</p>
+        </div>
+    </div>
+
+
+    <div class="section-2" id="about">
+        <div class="section2-div-1">
+            <div style="width: 50%;"></div>
+            <div class="image-cont">
+                <img src="assets/images/stone.png" alt="">
+            </div>
+        </div>
+        <div  class="section2-2">
+            <img src="assets/images/Image 3.png" alt="">
+            <img src="assets/images/Image 4.png" alt="">
+            <p style="font-size: 20px; font-weight:bold; margin-right: 20px">Shell</p>
+            <p style="font-size: 20px; font-weight:bold; margin-right: 20px">Ferrari</p>
+            <p style="font-size: 20px; font-weight:bold; margin-right: 20px">Amazon</p>
+            <img src="assets/images/Image 5.png" alt="">
+            <p style="font-size: 20px; font-weight:bold; margin-right: 20px">Apple</p>
+            <img src="assets/images/Image 6.png" alt="">
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu(){
+            document.querySelector(".menu-container-mobile").classList.toggle("active");
+        }
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,180 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", serif;
+    margin: 0;
+}
+
+.name{
+    font-family: 'Cursive standard', sans-serif;                                            
+}
+
+.hero
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 200px;
+    flex-basis: 400px;
+}
+
+.hero-img{
+    flex-grow: 1;
+}
+
+.hero-heading{
+    flex-grow: 1;
+}
+
+#main-div {
+    padding: 100px;
+}
+
+.burger-menu-btn{
+    display: none;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    background-color: white;
+    z-index: 9998;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.226);
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-menu a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-menu a:hover{
+    color: blue;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.site-identity{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.site-identity img{
+    width: 40px;
+    height: 40px;
+}
+
+.hero-heading h1{
+    font-size: 72px;
+}
+
+.hero-button button{
+    background-color: blue;
+    padding: 10px 30px;
+    color: white;
+    border: none;
+}
+
+.menu-container-mobile{
+    display: none;
+}
+
+.menu-btn{
+    background-color: blue;
+    color: white !important;
+    padding: 10px 15px;
+}
+
+.menu-btn a{
+    color: white !important;
+}
+
+.menu-btn:hover{
+    background-color: aqua;
+    border-radius: 20px;
+    transition: all;
+}
+
+.menu-btn a:hover{
+    color: black !important;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.small-img{
+    position: absolute;
+    top: 100px;
+    left: -60px;
+}
+
+.sub-heading{
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+    opacity: 0.5;
+}
+
+.hero-button button{
+    padding: 20px 40px;
+    font-size: 18px;
+}
+
+.hero-button button:hover{
+    background: green;
+}
+
+.small-text{
+    color: rgb(0, 0, 0);
+    opacity: 0.4;
+    margin-top: 20px;
+}
+
+.table{
+    border-collapse: collapse;
+}
+
+.table th,
+.table td{
+    border: 1px solid black;
+}
+
+.section-2{
+    height: 400px;
+    width: 100%;
+}
+
+.section2-div-1{
+    display: flex   ;
+}
+
+.image-cont{
+    background: #161159;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.section2-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.section2-2 img{
+    height: 30px;
+}
