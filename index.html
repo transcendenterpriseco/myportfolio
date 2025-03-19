@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/cursive" rel="stylesheet">
+
 </head>
 
 <body>
@@ -29,7 +30,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#">Projects</a></li>
                 <li class="sibling-4"><a href="#">Works</a></li>
-                <li class="menu-btn"><a href="#">Hire Me</a></li>
+                <li id="hireBTN" class="menu-btn"><a href="#">Hire Me</a></li>
             </ul>
         </div>
 
@@ -57,11 +58,11 @@
             <img class="small-img" src="assets/images/relative.png" alt="Site Logo">
         </div>
         <div class="hero-heading">
-            <h1 class="name">Explore My <br>
+            <h1 id="output" class="name" style="overflow-wrap: break-word;">Explore My <br>
                 Portfolio</h1>
             <p class="sub-heading">Discover My Expertise as a Full Stack Developer</p>
             <div class="hero-button">
-                <button class="hire-me-btn" style="margin-right: 15px;">Hire Me</button>
+                <button class="hire-me-btn" style="margin-right: 15px;" onclick="showMessage()">Hire Me</button>
                 <button>Contact Me</button>
             </div>
             <p class="small-text">Crafting Innovative Digital Solutions for Your Business</p>
@@ -88,12 +89,6 @@
         </div>
     </div>
 
-    <script>
-        function toggleMenu(){
-            document.querySelector(".menu-container-mobile").classList.toggle("active");
-        }
-    </script>
+    <script type="text/javascript" src="assets/js/index.js"></script>
 </body>
-
-
 </html>
